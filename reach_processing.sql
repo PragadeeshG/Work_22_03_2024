@@ -1,0 +1,15 @@
+create table if not exists reach_processing(
+upload_id bigint not null,
+file_name varchar(255) null,
+uploaded_by varchar(255) null,
+uploaded_date varchar(255) null,
+is_action char null,
+status varchar(255) null,
+process_start_time varchar(255) null,
+process_completion_time varchar(255) null,
+file_type varchar(255) null,
+execution_duration bigint not null,
+creation_date varchar(255) null,
+execution_log varchar(255) null,
+logged_date varchar(255) null,
+constraint reach_processing_pk primary key(upload_id));
